@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css.map">
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="#">C#Docs</a>
+          </div>
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul class="menu">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#variables">Variables</a></li>
+            <li><a href="#operators">Operators</a></li>
+            <li><a href="#control-structures">Control Structures</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#exceptions">Exceptions</a></li>
+            <li><a href="#libraries">Libraries</a></li>
+            <li><a href="#references">References</a></li>
+          </ul>
+        </nav>
+    
+        <div class="content">
+          <main>
+            <section id="introduction">
+              <h1>Introduction</h1>
+              <p>
+                Welcome to the C# documentation! This guide provides information and examples on how to write and use C# programming language.
+              </p>
+            </section>
+    
+            <section id="variables">
+              <h1>Variables</h1>
+              <p>
+                Learn about the basics of variable declaration and initialization in C#.
+              </p>
+              <pre><code>
+    // Declaration
+    int myVariable;
+    
+    // Initialization
+    myVariable = 42;
+    
+    // Declaration and Initialization
+    int anotherVariable = 10;
+              </code></pre>
+            </section>
+    
+            <section id="operators">
+              <h1>Operators</h1>
+              <p>
+                Explore the different types of operators available in C# and how to use them.
+              </p>
+              <pre><code>
+    // Arithmetic operators
+    int sum = 5 + 3;
+    int difference = 10 - 5;
+    double product = 2.5 * 3.2;
+    double division = 10.0 / 2.5;
+    
+    // Comparison operators
+    bool isEqual = (5 == 5);
+    bool isNotEqual = (10 != 5);
+    bool isGreaterThan = (7 > 3);
+    bool isLessThan = (2 < 5);
+    
+    // Logical operators
+    bool result = (true &amp;&amp; false);
+    bool result2 = (true || false);
+    bool result3 = !true;
+              </code></pre>
+            </section>
+    
+            <section id="control-structures">
+              <h1>Control Structures</h1>
+              <p>
+                Understand how to use control structures like if statements, loops, and switch statements in C#.
+              </p>
+              <pre><code>
+    // If statement
+    int number = 10;
+    if (number > 0) {
+      Console.WriteLine("Number is positive");
+    } else if (number < 0) {
+      Console.WriteLine("Number is negative");
+    } else {
+      Console.WriteLine("Number is zero");
+    }
+    
+    // For loop
+    for (int i = 0; i < 5; i++) {
+      Console.WriteLine(i);
+    }
+    
+    // Switch statement
+    int day = 3;
+    switch (day) {
+      case 1:
+        Console.WriteLine("Monday");
+        break;
+      case 2:
+        Console.WriteLine("Tuesday");
+        break;
+      case 3:
+        Console.WriteLine("Wednesday");
+        break;
+      default:
+        Console.WriteLine("Invalid day");
+        break;
+    }
+              </code></pre>
+            </section>
+    
+            <section id="classes">
+              <h1>Classes</h1>
+              <p>
+                Learn how to define and use classes to create objects and encapsulate data and functionality.
+              </p>
+              <pre><code>
+    // Class definition
+    public class Person {
+      public string Name { get; set; }
+      public int Age { get; set; }
+    
+      public Person(string name, int age) {
+        Name = name;
+        Age = age;
+      }
+    
+      public void SayHello() {
+        Console.WriteLine("Hello, my name is " + Name);
+      }
+    }
+    
+    // Create an object
+    Person person = new Person("John Doe", 30);
+    
+    // Access member variables
+    Console.WriteLine("Name: " + person.Name);
+    Console.WriteLine("Age: " + person.Age);
+    
+    // Call member function
+    person.SayHello();
+              </code></pre>
+            </section>
+    
+            <section id="exceptions">
+              <h1>Exceptions</h1>
+              <p>
+                Understand how to handle exceptions in C# to handle runtime errors gracefully.
+              </p>
+              <pre><code>
+    try {
+      // Code that may throw an exception
+      if (someCondition) {
+        throw new MyException("An error occurred");
+      }
+    } catch (MyException ex) {
+      // Handle the exception
+      Console.WriteLine("Exception caught: " + ex.Message);
+    }
+              </code></pre>
+            </section>
+    
+            <section id="libraries">
+              <h1>Libraries</h1>
+              <p>
+                Explore commonly used libraries in C# for various purposes, such as input/output operations, string manipulation, and mathematical calculations.
+              </p>
+              <ul>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.console">System.Console</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.string">System.String</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/api/system.math">System.Math</a></li>
+              </ul>
+            </section>
+    
+            <section id="references">
+              <h1>References</h1>
+              <p>
+                Check out these external resources for further learning and reference on C# programming.
+              </p>
+              <ul>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/">C# Documentation</a></li>
+                <li><a href="https://www.tutorialspoint.com/csharp/">C# Tutorial</a></li>
+                <li><a href="https://docs.microsoft.com/en-us/dotnet/">.NET Documentation</a></li>
+              </ul>
+            </section>
+          </main>
+        </div>
+      </div>
+    
+
+  <script src="js/bootstrap.bundle.min.js" async defer></script>
+  <script src="js/bootstrap.bundle.min.js.map"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
